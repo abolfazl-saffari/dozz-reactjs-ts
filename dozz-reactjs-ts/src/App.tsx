@@ -1,8 +1,19 @@
-import React from "react";
+import { Component } from "react";
+import Board from "./components/Board";
+import Cell from "./components/Cell";
+import Circle from "./components/Circle";
+import Cross from "./components/Cross";
 
-class App extends React.Component<any, any> {
+class App extends Component<any, any> {
   render() {
-    return <p>The quick brown fox...</p>;
+    return (
+      <div>
+        <Board />
+        <Cell />
+        <Circle />
+        <Cross />
+      </div>
+    );
   }
 }
 
