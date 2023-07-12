@@ -7,7 +7,7 @@ import Cross from "./components/Cross";
 class App extends Component<any, any> {
   render() {
     return (
-      <div>
+      <div className="w-full h-screen flex justify-center items-center text-center">
         <Board />
         <Cell />
         <Circle />
