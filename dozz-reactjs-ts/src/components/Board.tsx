@@ -1,39 +1,24 @@
 import { Component } from "react";
+import Cell from "./Cell";
 
 class Board extends Component {
   render() {
     return (
       <table className="border-collapse m-auto">
         <tr>
-          <td className="w-24 h-24 md:w-48 md:h-48 border-2 border-black border-t-0 border-l-0">
-            1
-          </td>
-          <td className="w-24 h-24 md:w-48 md:h-48 border-2 border-black border-t-0">
-            1
-          </td>
-          <td className="w-24 h-24 md:w-48 md:h-48 border-2 border-black border-t-0 border-r-0">
-            1
-          </td>
+          <Cell className="border-t-0 border-l-0" statue="cross" />
+          <Cell className="border-t-0" statue="empty" />
+          <Cell className="border-t-0 border-r-0" statue="circle" />
         </tr>
         <tr>
-          <td className="w-24 h-24 md:w-48 md:h-48 border-2 border-black border-l-0">
-            1
-          </td>
-          <td className="w-24 h-24 md:w-48 md:h-48 border-2 border-black">1</td>
-          <td className="w-24 h-24 md:w-48 md:h-48 border-2 border-black border-r-0">
-            1
-          </td>
+          <Cell className="border-l-0" statue="circle" />
+          <Cell statue="empty" />
+          <Cell className="border-r-0" statue="cross" />
         </tr>
         <tr>
-          <td className="w-24 h-24 md:w-48 md:h-48 border-2 border-black border-b-0 border-l-0">
-            1
-          </td>
-          <td className="w-24 h-24 md:w-48 md:h-48 border-2 border-black border-b-0">
-            1
-          </td>
-          <td className="w-24 h-24 md:w-48 md:h-48 border-2 border-black border-b-0 border-r-0">
-            1
-          </td>
+          <Cell className="border-b-0 border-l-0" statue="cross" />
+          <Cell className="border-b-0" statue="empty" />
+          <Cell className="border-b-0 border-r-0" statue="circle" />
         </tr>
       </table>
     );

@@ -1,8 +1,5 @@
 import { Component } from "react";
 import Board from "./components/Board";
-import Cell from "./components/Cell";
-import Circle from "./components/Circle";
-import Cross from "./components/Cross";
 import Title from "./components/Title";
 
 class App extends Component<any, any> {
@@ -14,9 +11,6 @@ class App extends Component<any, any> {
         </header>
         <main className="w-full h-screen flex justify-center items-center text-center">
           <Board />
-          <Cell />
-          <Circle />
-          <Cross />
         </main>
       </div>
     );
